@@ -2,11 +2,17 @@
 import random
 
 cnum=random.randrange(0,100)
-unum=int(input("Enter your Number:"))
+count = 0
 
-if cnum>unum:
-    print("Computer's Number is Greater than your Number")
-elif cnum<unum:
-    print("Computer's Number is Less than your Number")
-else:
-    print("Congratulations! You guessed the number correctly.")
+while True:
+    unum = int(input("Enter your Number: "))
+    count += 1
+
+    if cnum > unum:
+        print("Too Low! Try Again.")
+    elif cnum < unum:
+        print("Too High! Try Again.")
+    else:
+        print("Congratulations! You guessed the number correctly.")
+        print("Total Attempts:", count)
+        break

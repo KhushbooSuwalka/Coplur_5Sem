@@ -3,3 +3,13 @@ git add .
 git commit -m "Initial commit"
 git remote add origin https://github.com/KhushbooSuwalka/practise_repo.git
 git push -u origin master(# If branch is master and not main)
+
+#-----------For Branching----------------
+(Branching is done to avoid conflicts when more than one person works on one repo )
+git branch demo (Create a branch)
+git switch demo
+(Now make a file ,that file is in demo branch)
+git merge demo
+git push origin demo
+{combine and merge the pull request from github...}
+git pull origin master (To pull that file from demo branch to master branch)
